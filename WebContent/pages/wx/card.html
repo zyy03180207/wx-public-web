@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="${request.ContextPath}/css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="/css/app.css" />
+		<script src="WX/js/jquery.min.js"></script>
+	</head>
+
+	<body>
+			<div class="mui-card">
+			<%for(card in cards){%>
+				<div class="mui-card-header mui-card-media" style="height:40vw;background-image:url(/images/cbd.jpg)"></div>
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<p>Posted on January 18, 2016</p>
+						<p>作者：张阳阳</p>
+						<p style="color: #333;">这里显示文章摘要，让读者对文章内容有个粗略的概念...</p>
+					</div>
+				</div>
+				<div class="mui-card-footer">
+					<a class="mui-card-link">查看全文</a>
+				</div>
+				<%}%>
+			</div>
+		</div>
+		<script src="/js/mui.min.js"></script>
+	</body>
+</html>
