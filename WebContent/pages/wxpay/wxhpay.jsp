@@ -153,7 +153,7 @@ td {
 <script src="<%=request.getContextPath()%>/js/sha1.js"></script>
 <script type="text/javascript">
 	function config() {
-		var sign = <%=new Signature();%>;
+		var sign = <%=new Signature()%>;
 		var appip = '<%=Signature.AppId%>';
 		var timestamp = '<%=Signature.ctTimestamp()%>';
 		var nonceStr = '<%=Signature.ctNonceStr(32)%>';
@@ -184,7 +184,7 @@ td {
 		    nonceStr: '<%=Signature.nonceStr%>', 
 		    package : 'prepay_id=wx20161202112258ad7168cdf70423983971', //统一支付接口返回的prepay_id参数值，提交格式如：prepay_id=***）
 		    signType: 'MD5', // 签名方式，默认为'SHA1'，使用新版支付需传入'MD5'
-		    paySign: '<%=Signature.signPay('wx20161202112258ad7168cdf70423983971');%>', // 支付签名
+		    paySign: '<%=Signature.signPay("wx20161202112258ad7168cdf70423983971");%>', // 支付签名
 		    success: function (res) {
 		        // 支付成功后的回调函数
 		        alert("支付成功");

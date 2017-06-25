@@ -1,7 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%@ page import="com.jfinal.plugin.activerecord.*"%>
 <%@ page import="java.util.*"%>
-<%@ page import="com.cpospas.common.dao.*"%>
 <%@ include file="/common/_layoutMain.jsp"%>
 <%
 	Page<Record> rr = null;
